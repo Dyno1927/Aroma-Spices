@@ -1,0 +1,461 @@
+[
+  {
+    "name": "Turmeric Powder",
+    "price": 100,
+    "weight": "100g",
+    "description": "Golden goodness - pure organic turmeric",
+    "stock": 50,
+    "category": "Most Used Powder Spices",
+    "featured": true
+  },
+  {
+    "name": "Red Chili Powder",
+    "price": 120,
+    "weight": "100g",
+    "description": "Fiery and bold red chili powder",
+    "stock": 45,
+    "category": "Most Used Powder Spices",
+    "featured": true
+  },
+  {
+    "name": "Coriander Powder",
+    "price": 90,
+    "weight": "100g",
+    "description": "Freshly ground coriander seeds",
+    "stock": 60,
+    "category": "Most Used Powder Spices",
+    "featured": true
+  },
+  {
+    "name": "Cumin Powder",
+    "price": 130,
+    "weight": "100g",
+    "description": "Warm and earthy cumin powder",
+    "stock": 40,
+    "category": "Most Used Powder Spices",
+    "featured": true
+  },
+  {
+    "name": "Garam Masala",
+    "price": 180,
+    "weight": "100g",
+    "description": "Traditional Indian spice blend",
+    "stock": 35,
+    "category": "Most Used Powder Spices",
+    "featured": true
+  },
+  {
+    "name": "Kitchen King Masala",
+    "price": 170,
+    "weight": "100g",
+    "description": "Rich all-purpose curry masala",
+    "stock": 30,
+    "category": "Most Used Powder Spices",
+    "featured": false
+  },
+  {
+    "name": "Chaat Masala",
+    "price": 110,
+    "weight": "100g",
+    "description": "Tangy and spicy seasoning blend",
+    "stock": 40,
+    "category": "Most Used Powder Spices",
+    "featured": false
+  },
+  {
+    "name": "Sambar Powder",
+    "price": 140,
+    "weight": "100g",
+    "description": "South Indian sambar spice mix",
+    "stock": 30,
+    "category": "Most Used Powder Spices",
+    "featured": false
+  },
+  {
+    "name": "Pav Bhaji Masala",
+    "price": 150,
+    "weight": "100g",
+    "description": "Spicy pav bhaji masala blend",
+    "stock": 25,
+    "category": "Most Used Powder Spices",
+    "featured": false
+  },
+  {
+    "name": "Biryani Masala",
+    "price": 190,
+    "weight": "100g",
+    "description": "Royal biryani spice mix",
+    "stock": 20,
+    "category": "Most Used Powder Spices",
+    "featured": true
+  },
+  {
+    "name": "Cumin Seeds",
+    "price": 150,
+    "weight": "100g",
+    "description": "Rich aroma cumin seeds",
+    "stock": 40,
+    "category": "Daily Use Whole Spices",
+    "featured": false
+  },
+  {
+    "name": "Mustard Seeds",
+    "price": 80,
+    "weight": "100g",
+    "description": "Perfect for tempering dishes",
+    "stock": 55,
+    "category": "Daily Use Whole Spices",
+    "featured": false
+  },
+  {
+    "name": "Fenugreek Seeds",
+    "price": 110,
+    "weight": "100g",
+    "description": "Strong flavored fenugreek seeds",
+    "stock": 40,
+    "category": "Daily Use Whole Spices",
+    "featured": false
+  },
+  {
+    "name": "Fennel Seeds",
+    "price": 140,
+    "weight": "100g",
+    "description": "Sweet fennel seeds",
+    "stock": 35,
+    "category": "Daily Use Whole Spices",
+    "featured": false
+  },
+  {
+    "name": "Ajwain",
+    "price": 95,
+    "weight": "100g",
+    "description": "Strong aromatic carom seeds",
+    "stock": 30,
+    "category": "Daily Use Whole Spices",
+    "featured": false
+  },
+  {
+    "name": "Nigella Seeds",
+    "price": 130,
+    "weight": "100g",
+    "description": "Flavorful kalonji seeds",
+    "stock": 25,
+    "category": "Daily Use Whole Spices",
+    "featured": false
+  },
+  {
+    "name": "Sesame Seeds",
+    "price": 100,
+    "weight": "100g",
+    "description": "Nutty white sesame seeds",
+    "stock": 30,
+    "category": "Daily Use Whole Spices",
+    "featured": false
+  },
+  {
+    "name": "Poppy Seeds",
+    "price": 220,
+    "weight": "100g",
+    "description": "Premium khus khus seeds",
+    "stock": 20,
+    "category": "Daily Use Whole Spices",
+    "featured": false
+  },
+  {
+    "name": "Black Pepper",
+    "price": 300,
+    "weight": "100g",
+    "description": "Premium whole black pepper",
+    "stock": 30,
+    "category": "Premium & Less Used Spices",
+    "featured": true
+  },
+  {
+    "name": "Cardamom",
+    "price": 500,
+    "weight": "100g",
+    "description": "Sweet and fragrant cardamom",
+    "stock": 20,
+    "category": "Premium & Less Used Spices",
+    "featured": true
+  },
+  {
+    "name": "Cloves",
+    "price": 350,
+    "weight": "100g",
+    "description": "Strong aromatic cloves",
+    "stock": 20,
+    "category": "Premium & Less Used Spices",
+    "featured": false
+  },
+  {
+    "name": "Cinnamon Sticks",
+    "price": 250,
+    "weight": "100g",
+    "description": "Sweet woody cinnamon sticks",
+    "stock": 25,
+    "category": "Premium & Less Used Spices",
+    "featured": false
+  },
+  {
+    "name": "Bay Leaves",
+    "price": 90,
+    "weight": "100g",
+    "description": "Fragrant bay leaves",
+    "stock": 40,
+    "category": "Premium & Less Used Spices",
+    "featured": false
+  },
+  {
+    "name": "Star Anise",
+    "price": 280,
+    "weight": "100g",
+    "description": "Sweet licorice flavored spice",
+    "stock": 15,
+    "category": "Premium & Less Used Spices",
+    "featured": false
+  },
+  {
+    "name": "Nutmeg",
+    "price": 320,
+    "weight": "100g",
+    "description": "Warm aromatic nutmeg spice",
+    "stock": 15,
+    "category": "Premium & Less Used Spices",
+    "featured": false
+  },
+  {
+    "name": "Mace",
+    "price": 400,
+    "weight": "100g",
+    "description": "Premium javitri spice",
+    "stock": 10,
+    "category": "Premium & Less Used Spices",
+    "featured": false
+  },
+  {
+    "name": "Dry Ginger",
+    "price": 180,
+    "weight": "100g",
+    "description": "Strong flavored dry ginger",
+    "stock": 25,
+    "category": "Premium & Less Used Spices",
+    "featured": false
+  },
+  {
+    "name": "White Pepper",
+    "price": 350,
+    "weight": "100g",
+    "description": "Smooth and mild white pepper",
+    "stock": 15,
+    "category": "Premium & Less Used Spices",
+    "featured": false
+  },
+  {
+    "name": "Kasuri Methi",
+    "price": 120,
+    "weight": "100g",
+    "description": "Dried fenugreek leaves",
+    "stock": 35,
+    "category": "Herbs & Leaves",
+    "featured": false
+  },
+  {
+    "name": "Curry Leaves",
+    "price": 70,
+    "weight": "100g",
+    "description": "Fresh aromatic curry leaves",
+    "stock": 50,
+    "category": "Herbs & Leaves",
+    "featured": false
+  },
+  {
+    "name": "Natural Forest Honey",
+    "price": 100,
+    "weight": "250g",
+    "description": "Pure natural organic honey",
+    "stock": 40,
+    "category": "Natural Sweeteners & Salts",
+    "featured": true
+  },
+  {
+    "name": "Rock Salt",
+    "price": 60,
+    "weight": "500g",
+    "description": "Pure pink rock salt crystals",
+    "stock": 60,
+    "category": "Natural Sweeteners & Salts",
+    "featured": false
+  },
+  {
+    "name": "Black Salt",
+    "price": 70,
+    "weight": "500g",
+    "description": "Traditional Indian black salt",
+    "stock": 50,
+    "category": "Natural Sweeteners & Salts",
+    "featured": false
+  },
+  {
+    "name": "Jaggery Powder",
+    "price": 90,
+    "weight": "500g",
+    "description": "Natural unrefined jaggery powder",
+    "stock": 40,
+    "category": "Natural Sweeteners & Salts",
+    "featured": false
+  },
+  {
+    "name": "Palm Sugar",
+    "price": 140,
+    "weight": "500g",
+    "description": "Natural palm sugar sweetener",
+    "stock": 30,
+    "category": "Natural Sweeteners & Salts",
+    "featured": false
+  },
+  {
+    "name": "Pink Himalayan Salt",
+    "price": 120,
+    "weight": "500g",
+    "description": "Mineral-rich Himalayan pink salt",
+    "stock": 35,
+    "category": "Natural Sweeteners & Salts",
+    "featured": false
+  },
+  {
+    "name": "Tandoori Masala",
+    "price": 160,
+    "weight": "100g",
+    "description": "Authentic tandoori spice blend",
+    "stock": 30,
+    "category": "Specialty Masalas",
+    "featured": true
+  },
+  {
+    "name": "Paneer Tikka Masala",
+    "price": 170,
+    "weight": "100g",
+    "description": "Flavorful paneer tikka seasoning",
+    "stock": 25,
+    "category": "Specialty Masalas",
+    "featured": false
+  },
+  {
+    "name": "Chicken Masala",
+    "price": 180,
+    "weight": "100g",
+    "description": "Rich and aromatic chicken masala",
+    "stock": 30,
+    "category": "Specialty Masalas",
+    "featured": false
+  },
+  {
+    "name": "Shahi Paneer Masala",
+    "price": 190,
+    "weight": "100g",
+    "description": "Royal spice blend for paneer dishes",
+    "stock": 25,
+    "category": "Specialty Masalas",
+    "featured": false
+  },
+  {
+    "name": "Rajma Masala",
+    "price": 150,
+    "weight": "100g",
+    "description": "Traditional rajma curry masala",
+    "stock": 30,
+    "category": "Specialty Masalas",
+    "featured": false
+  },
+  {
+    "name": "Chole Masala",
+    "price": 150,
+    "weight": "100g",
+    "description": "Classic Punjabi chole spice mix",
+    "stock": 35,
+    "category": "Specialty Masalas",
+    "featured": true
+  },
+  {
+    "name": "Tea Masala",
+    "price": 130,
+    "weight": "100g",
+    "description": "Aromatic spice blend for tea",
+    "stock": 40,
+    "category": "Specialty Masalas",
+    "featured": false
+  },
+  {
+    "name": "White Sesame Seeds",
+    "price": 110,
+    "weight": "100g",
+    "description": "Premium quality white sesame seeds",
+    "stock": 30,
+    "category": "Daily Use Whole Spices",
+    "featured": false
+  },
+  {
+    "name": "Black Sesame Seeds",
+    "price": 130,
+    "weight": "100g",
+    "description": "Nutritious black sesame seeds",
+    "stock": 25,
+    "category": "Daily Use Whole Spices",
+    "featured": false
+  },
+  {
+    "name": "Caraway Seeds",
+    "price": 170,
+    "weight": "100g",
+    "description": "Earthy and aromatic caraway seeds",
+    "stock": 20,
+    "category": "Premium & Less Used Spices",
+    "featured": false
+  },
+  {
+    "name": "Celery Seeds",
+    "price": 160,
+    "weight": "100g",
+    "description": "Distinctive flavored celery seeds",
+    "stock": 20,
+    "category": "Premium & Less Used Spices",
+    "featured": false
+  },
+  {
+    "name": "Anardana Powder",
+    "price": 180,
+    "weight": "100g",
+    "description": "Tangy dried pomegranate powder",
+    "stock": 20,
+    "category": "Premium & Less Used Spices",
+    "featured": false
+  },
+  {
+    "name": "Mint Leaves",
+    "price": 80,
+    "weight": "100g",
+    "description": "Dried aromatic mint leaves",
+    "stock": 40,
+    "category": "Herbs & Leaves",
+    "featured": false
+  },
+  {
+    "name": "Oregano",
+    "price": 100,
+    "weight": "100g",
+    "description": "Premium dried oregano leaves",
+    "stock": 35,
+    "category": "Herbs & Leaves",
+    "featured": false
+  },
+  {
+    "name": "Test Product",
+    "price": 1,
+    "weight": "100g",
+    "description": "Just a test product",
+    "stock": 10,
+    "category": "Test",
+    "featured": false
+  }
+]

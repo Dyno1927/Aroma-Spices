@@ -1,0 +1,361 @@
+# 🌶️ Aroma Spices — E-Commerce Platform
+
+A full-stack, production e-commerce platform for a real family spice business based in Aligarh, Uttar Pradesh.
+
+> ⚠️ **Private & Proprietary** — This project is not open source. All rights reserved.
+
+**Live Site:** [aromaspicies.com](https://aromaspicies.com) &nbsp;|&nbsp; **Status:** 🚀 Active Development — Phase 4 Planning
+
+---
+
+## 📋 Project Overview
+
+Aroma Spices is a production-grade e-commerce web app built for a real family spice business. Customers can browse, search, review, and purchase from a catalog of 31 premium Indian spices — with full authentication, order management, and Razorpay payments in progress.
+
+**Tagline:** _Pure Taste • Rich Aroma • Natural Goodness_
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+| Tool                                       | Purpose                |
+| ------------------------------------------ | ---------------------- |
+| Vue 3 (Composition API + `<script setup>`) | UI framework           |
+| Vue Router v4                              | Client-side routing    |
+| Tailwind CSS v3                            | Utility-first styling  |
+| Vite                                       | Build tool             |
+| Fuse.js                                    | Fuzzy product search   |
+| @vueuse/head                               | Per-page SEO meta tags |
+
+### Backend
+
+| Tool                       | Purpose                                  |
+| -------------------------- | ---------------------------------------- |
+| Node.js + Express v5 (ESM) | REST API server                          |
+| MongoDB Atlas + Mongoose   | Database                                 |
+| JSON Web Tokens (JWT)      | Authentication (15m access + 7d refresh) |
+| Resend                     | Transactional email (HTTPS API)          |
+| Razorpay                   | Payment gateway _(Phase 3)_              |
+
+### Hosting
+
+| Layer    | Platform           |
+| -------- | ------------------ |
+| Frontend | Hostinger (static) |
+| Backend  | Render.com         |
+| Database | MongoDB Atlas      |
+
+---
+
+## 📂 Project Structure
+
+```
+Aroma Spices/
+│
+├── frontend/
+│   ├── public/
+│   │   ├── images/                  ← Product images
+│   │   ├── robots.txt               ← SEO crawl rules
+│   │   └── sitemap.xml              ← Auto-generated at build
+│   ├── scripts/
+│   │   └── generate-sitemap.js      ← Sitemap generator (runs pre-build)
+│   └── src/
+│       ├── assets/
+│       ├── components/
+│       │   ├── Header.vue           ← Nav + search + cart icon + auth
+│       │   ├── CartDrawer.vue       ← Sliding cart drawer
+│       │   ├── Sidebar.vue          ← Category filter sidebar
+│       │   ├── Landing.vue          ← Hero section
+│       │   ├── ThemeToggle.vue      ← Light / dark / system toggle
+│       │   └── Toast.vue            ← Toast notifications
+│       ├── composables/
+│       │   ├── useAuth.js           ← Auth state + session persistence
+│       │   ├── useCart.js           ← Cart state
+│       │   ├── useSEO.js            ← Title + meta + OG + JSON-LD
+│       │   ├── useTheme.js          ← Theme management
+│       │   └── useToast.js          ← Toast composable
+│       ├── pages/
+│       │   ├── HomePage.vue         ← Hero + featured products
+│       │   ├── ProductsPage.vue     ← Product grid + search + filter
+│       │   ├── ProductPage.vue      ← Product detail + reviews carousel
+│       │   ├── AuthPage.vue         ← Login / signup sliding panel
+│       │   ├── CheckoutPage.vue     ← Checkout flow *(Phase 3)*
+│       │   ├── OrderConfirmPage.vue ← Post-payment confirmation *(Phase 3)*
+│       │   ├── VerifyEmailPage.vue  ← Email verification landing
+│       │   ├── AboutPage.vue
+│       │   └── ContactPage.vue
+│       ├── router/
+│       │   └── index.js
+│       ├── App.vue
+│       ├── main.js
+│       └── style.css                ← CSS variables (Ocean & Sand design system)
+│
+├── backend/
+│   ├── config/
+│   │   └── db.js                    ← MongoDB connection
+│   ├── controllers/
+│   │   ├── authController.js        ← signup/login/refresh/logout/me/update/verifyEmail
+│   │   ├── productController.js
+│   │   ├── reviewController.js
+│   │   └── orderController.js       ← create/verify/fetch *(Phase 3)*
+│   ├── middleware/
+│   │   ├── authMiddleware.js        ← protect / optionalAuth
+│   │   └── errorHandlerMiddleware.js
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Product.js
+│   │   ├── Review.js
+│   │   └── Order.js                 ← *(Phase 3)*
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   ├── productRoutes.js
+│   │   ├── reviewRoutes.js
+│   │   └── orderRoutes.js           ← *(Phase 3)*
+│   ├── scripts/
+│   │   └── seedProducts.js          ← Seeds 31 products to MongoDB
+│   ├── utils/
+│   │   ├── razorpay.js              ← Razorpay client init *(Phase 3)*
+│   │   └── sendVerificationEmail.js ← Resend email util
+│   └── server.js
+│
+├── .gitignore
+├── LICENSE
+└── README
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js v18+
+- npm
+- MongoDB Atlas URI
+- Resend API key
+
+### 1. Clone
+
+```bash
+git clone https://github.com/Dyno1927/Aroma-Spices.git
+cd Aroma-Spices
+```
+
+### 2. Backend
+
+```bash
+cd backend
+npm install
+# create .env (see Environment Variables below)
+npm start
+```
+
+Runs on: `http://localhost:5000`
+
+### 3. Seed Database
+
+```bash
+npm run seed    # → node scripts/seedProducts.js
+```
+
+### 4. Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Runs on: `http://localhost:5173`
+
+---
+
+## 📦 Feature Status
+
+### ✅ Phase 1 — Foundation (Complete)
+
+- [x] Express REST API
+- [x] Vue 3 + Vue Router (5 routes)
+- [x] Ocean & Sand design system (CSS custom properties, dark mode)
+- [x] 31 products across 5 categories in MongoDB
+- [x] Fuzzy search (Fuse.js)
+- [x] Category sidebar filter
+- [x] Shopping cart drawer (add / remove / quantity)
+- [x] Toast notification system
+- [x] Product detail page with image carousel
+- [x] Star ratings + review system
+- [x] Skeleton loaders with staggered animation
+- [x] About & Contact pages
+- [x] Deployed live — aromaspicies.com
+
+### ✅ Phase 2 — Auth & Data (Complete)
+
+- [x] JWT authentication (15m access token + 7d httpOnly refresh cookie)
+- [x] Signup / login with sliding panel UI (AuthPage.vue)
+- [x] Persistent session (refresh on page load)
+- [x] Email verification (Resend via HTTPS — SMTP blocked on Render free tier)
+- [x] User profile update
+- [x] MongoDB Atlas migration (products, users, reviews)
+- [x] Contact form email via Resend
+
+### ✅ Phase 3 — Payments (Complete)
+
+- [x] Order model (MongoDB)
+- [x] Razorpay util + order controller
+- [x] Order routes (create / verify / my orders)
+- [x] useRazorpay.js composable
+- [x] CheckoutPage.vue (address pre-fill for logged-in users)
+- [x] OrderConfirmPage.vue
+- [x] Cloudflare Turnstile bot protection
+
+### 📋 Phase 4 — Admin Dashboard (Planned)
+
+- [ ] Admin role + protected routes
+- [ ] Product management (CRUD)
+- [ ] Order management
+
+### 📋 Phase 5 — Polish (Planned)
+
+- [ ] Multiple images per product
+- [ ] Order history in user profile
+- [ ] SSR / prerendering for SEO (Nuxt migration evaluation)
+
+---
+
+## 📚 API Reference
+
+### Auth
+
+```
+POST   /api/auth/signup
+POST   /api/auth/login
+POST   /api/auth/refresh
+POST   /api/auth/logout
+GET    /api/auth/me
+PUT    /api/auth/profile
+GET    /api/auth/verify-email/:token
+```
+
+### Products
+
+```
+GET    /api/products
+GET    /api/products/:id
+```
+
+### Reviews
+
+```
+GET    /api/reviews/:productId
+POST   /api/reviews/:productId
+```
+
+### Orders _(Phase 3)_
+
+```
+POST   /api/orders/create
+POST   /api/orders/verify
+GET    /api/orders/my
+GET    /api/orders/:id
+```
+
+---
+
+## 🔒 Environment Variables
+
+### `backend/.env`
+
+```
+PORT=5000
+NODE_ENV=development
+MONGODB_URI=mongodb+srv://...
+JWT_SECRET=your_jwt_secret
+JWT_REFRESH_SECRET=your_refresh_secret
+RESEND_API_KEY=re_...
+RAZORPAY_KEY_ID=rzp_test_...
+RAZORPAY_KEY_SECRET=...
+```
+
+### `frontend/.env`
+
+```
+VITE_API_URL=https://aroma-spices.onrender.com
+```
+
+---
+
+## 💻 Dev Commands
+
+### Backend
+
+```bash
+npm start          # Start server
+npm run seed       # Seed 31 products to MongoDB
+```
+
+### Frontend
+
+```bash
+npm run dev              # Dev server (localhost:5173)
+npm run generate-sitemap # Regenerate sitemap.xml from live API
+npm run build            # Generate sitemap + Vite build → dist/
+npm run preview          # Preview production build
+```
+
+### Deploy
+
+```
+1. npm run build          → dist/ + sitemap.xml generated
+2. Upload dist/ contents  → Hostinger public_html/
+3. Upload images/         → public_html/images/
+4. Push backend           → GitHub → Render auto-deploys
+```
+
+---
+
+## 🎨 Design System — Ocean & Sand
+
+```css
+/* Light mode */
+--primary: #1e3a5f --accent: #a8c5d6 --bg-page: #f7f6f2 /* Dark mode */
+  --primary: #5f8fb3 --bg-page: #0b1420 --bg-card: #1b3952 --text: #f5f1ea
+  --accent: #d8c3a5;
+```
+
+Dark mode via `.dark` class on `<html>` — toggled by `useTheme.js` (light / system / dark), persisted in localStorage.
+
+---
+
+## 🐛 Known Gotchas
+
+| Issue                                | Fix                                                                    |
+| ------------------------------------ | ---------------------------------------------------------------------- |
+| Render free tier cold start (~30s)   | Ping `/api/products` on app load to pre-warm                           |
+| Render blocks SMTP                   | Use Resend HTTPS API for all email                                     |
+| Mongoose 7+ async hooks              | Remove `next` param from `async` pre-save hooks entirely               |
+| MongoDB defaults to `test` DB        | Pass `{ dbName: 'aroma-spices' }` explicitly in `mongoose.connect()`   |
+| Tailwind purges dynamic star classes | Safelist `text-yellow-400` and `text-gray-300` in `tailwind.config.js` |
+
+---
+
+## 📄 License
+
+**Proprietary — All Rights Reserved**
+
+This project is private and proprietary. See [LICENSE](./LICENSE) for full terms. Unauthorized use, copying, or distribution is strictly prohibited.
+
+---
+
+## 👨‍💻 Author
+
+**Khanishk**
+
+- Full-Stack Developer (in progress)
+- Building a real production e-commerce platform for the family business
+- GitHub: [@Dyno1927](https://github.com/Dyno1927)
+
+---
+
+_Last Updated: 14 June 2026_

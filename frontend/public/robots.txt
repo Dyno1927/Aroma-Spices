@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /feed/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+
+Sitemap: https://aromaspicies.com/sitemap.xml

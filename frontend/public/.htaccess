@@ -1,0 +1,25 @@
+Options -MultiViews
+
+RewriteEngine On
+
+# www → non-www redirect
+RewriteCond %{HTTP_HOST} ^www\.aromaspicies\.com [NC]
+RewriteRule ^(.*)$ https://aromaspicies.com/$1 [L,R=301]
+
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+    RewriteBase /
+
+    # Allow direct access to existing files and folders
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Send all other requests to Vue
+    RewriteRule . /index.html [L]
+
+</IfModule>
+
+# Custom server error pages
+ErrorDocument 403 /error/403.html
+ErrorDocument 500 /error/500.html

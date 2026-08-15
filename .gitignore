@@ -1,0 +1,74 @@
+# ========================
+# Dependencies
+# ========================
+node_modules/
+.pnp
+.pnp.js
+
+# ========================
+# Environment Variables
+# ========================
+.env
+.env.local
+.env.*.local
+.env.production
+
+# ========================
+# Build Outputs
+# ========================
+dist/
+dist-ssr/
+build/
+
+# ========================
+# Logs
+# ========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ========================
+# OS Files
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================
+# Editor Files
+# ========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ========================
+# Cache
+# ========================
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+
+# ========================
+# Vite
+# ========================
+vite.config.js.timestamp-*
+
+# ========================
+# Testing
+# ========================
+coverage/
+*.lcov
+
+# ========================
+# Misc
+# ========================
+*.local
+Not Important/
