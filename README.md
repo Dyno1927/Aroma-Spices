@@ -4,13 +4,13 @@ A full-stack, production e-commerce platform for a real family spice business ba
 
 > 📖 **Source-Available** — Public so you can learn from the code, but not open source: no copying, reuse, reselling, or using it as a skeleton. This is the real codebase for the Aroma Spices business. See [LICENSE](./LICENSE).
 
-**Live Site:** [aromaspicies.com](https://aromaspicies.com) &nbsp;|&nbsp; **Status:** 🚀 Active Development — Phase 4 Planning
+**Live Site:** [aromaspicies.com](https://aromaspicies.com) &nbsp;|&nbsp; **Status:** ✅ Complete — development & maintenance paused
 
 ---
 
 ## 📋 Project Overview
 
-Aroma Spices is a production-grade e-commerce web app built for a real family spice business. Customers can browse, search, review, and purchase from a catalog of 31 premium Indian spices — with full authentication, order management, and Razorpay payments in progress.
+Aroma Spices is a production-grade e-commerce web app built for a real family spice business. Customers can browse, search, review, and purchase from a catalog of 31 premium Indian spices — with full authentication, order management, and Razorpay payments. The project is complete and shipped live; development and maintenance are currently paused.
 
 **Tagline:** _Pure Taste • Rich Aroma • Natural Goodness_
 
@@ -210,13 +210,15 @@ Runs on: `http://localhost:5173`
 - [x] OrderConfirmPage.vue
 - [x] Cloudflare Turnstile bot protection
 
-### 📋 Phase 4 — Admin Dashboard (Planned)
+### ⏸️ Phase 4 — Admin Dashboard (Paused)
+
+Development paused — will revisit if the business needs it later.
 
 - [ ] Admin role + protected routes
 - [ ] Product management (CRUD)
 - [ ] Order management
 
-### 📋 Phase 5 — Polish (Planned)
+### ⏸️ Phase 5 — Polish (Paused)
 
 - [ ] Multiple images per product
 - [ ] Order history in user profile
