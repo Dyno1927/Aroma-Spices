@@ -2,7 +2,7 @@
 
 A full-stack, production e-commerce platform for a real family spice business based in Aligarh, Uttar Pradesh.
 
-> ⚠️ **Private & Proprietary** — This project is not open source. All rights reserved.
+> 📖 **Source-Available** — Public so you can learn from the code, but not open source: no copying, reuse, reselling, or using it as a skeleton. This is the real codebase for the Aroma Spices business. See [LICENSE](./LICENSE).
 
 **Live Site:** [aromaspicies.com](https://aromaspicies.com) &nbsp;|&nbsp; **Status:** 🚀 Active Development — Phase 4 Planning
 
@@ -342,9 +342,9 @@ Dark mode via `.dark` class on `<html>` — toggled by `useTheme.js` (light / sy
 
 ## 📄 License
 
-**Proprietary — All Rights Reserved**
+**Source-Available — All Rights Reserved except learning**
 
-This project is private and proprietary. See [LICENSE](./LICENSE) for full terms. Unauthorized use, copying, or distribution is strictly prohibited.
+This project's code is public so it can be read and learned from, but it is not open source. Copying, reusing, reselling, or using it as a skeleton/template for your own project is prohibited. It is the real codebase for the Aroma Spices business. See [LICENSE](./LICENSE) for full terms.
 
 ---
 

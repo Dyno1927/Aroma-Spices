@@ -1,40 +1,36 @@
-PROPRIETARY SOFTWARE LICENSE
+SOURCE-AVAILABLE LEARNING LICENSE
 
-Copyright © 2026 Khanishk. All Rights Reserved.
+Copyright © 2026 Khanishk and Aroma Spices. All Rights Reserved.
 
-NOTICE: This software and its source code are the exclusive property of
-Khanishk ("Owner"). Unauthorized copying, distribution, modification,
-public display, or public performance of this software is strictly prohibited.
+This is a source-available license. The code is public on GitHub so people
+can READ it and LEARN from it, but it is NOT open source and NOT free to
+reuse. This project is the real codebase for the Aroma Spices business.
 
-1. NO OPEN SOURCE
-   This is NOT open source software. No open source license applies.
+1. WHAT YOU MAY DO
+   You may view, read, and study the source code. You are welcome to use it
+   as a learning reference to understand how a full-stack e-commerce app is
+   built (Express, MongoDB, REST APIs, auth, and so on).
 
-2. NO COPYING OR DISTRIBUTION
-   You may not copy, reproduce, distribute, publish, or transfer this
-   software or any portion of it to any third party without prior written
-   permission from the Owner.
+2. WHAT YOU MAY NOT DO
+   - Copy, reproduce, or redistribute this code, in whole or in part.
+   - Use it as a skeleton, template, or starting point for your own project.
+   - Sell this code or any version of it.
+   - Include it in any other product or service, free or paid.
+   - Remove or alter this license notice.
 
-3. NO MODIFICATION
-   You may not modify, adapt, translate, reverse engineer, decompile,
-   disassemble, or create derivative works based on this software.
+3. NOT A LICENSE TO THE IDEAS
+   Understanding the code and writing your own version of the same concepts
+   is fine — that's what learning is. Copying the code itself is not.
 
-4. NO COMMERCIAL USE
-   You may not use this software or any part of it for commercial purposes
-   without explicit written permission from the Owner.
-
-5. CONFIDENTIALITY
-   This software contains confidential and proprietary information.
-   You must keep all information about this software strictly confidential.
-
-6. NO WARRANTY
+4. NO WARRANTY
    This software is provided "as is" without warranty of any kind.
    The Owner is not liable for any damages arising from use of this software.
 
-7. TERMINATION
-   Any unauthorized use automatically terminates any rights you may have
-   to view or interact with this software.
+5. TERMINATION
+   Any use violating section 2 automatically terminates your right to view
+   this code.
 
-8. GOVERNING LAW
+6. GOVERNING LAW
    This license is governed by the laws of India.
 
 For permissions or inquiries, contact the Owner directly.
