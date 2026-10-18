@@ -54,29 +54,29 @@ Aroma Spices is a production-grade e-commerce web app built for a real family sp
 ```
 Aroma Spices/
 │
-├── frontend/
-│   ├── public/
+├── Frontend/
+│   ├── Public/
 │   │   ├── images/                  ← Product images
 │   │   ├── robots.txt               ← SEO crawl rules
 │   │   └── sitemap.xml              ← Auto-generated at build
-│   ├── scripts/
-│   │   └── generate-sitemap.js      ← Sitemap generator (runs pre-build)
-│   └── src/
-│       ├── assets/
-│       ├── components/
+│   ├── Scripts/
+│   │   └── GenerateSitemap.js      ← Sitemap generator (runs pre-build)
+│   └── Src/
+│       ├── Assets/
+│       ├── Components/
 │       │   ├── Header.vue           ← Nav + search + cart icon + auth
 │       │   ├── CartDrawer.vue       ← Sliding cart drawer
 │       │   ├── Sidebar.vue          ← Category filter sidebar
 │       │   ├── Landing.vue          ← Hero section
 │       │   ├── ThemeToggle.vue      ← Light / dark / system toggle
 │       │   └── Toast.vue            ← Toast notifications
-│       ├── composables/
-│       │   ├── useAuth.js           ← Auth state + session persistence
-│       │   ├── useCart.js           ← Cart state
-│       │   ├── useSEO.js            ← Title + meta + OG + JSON-LD
-│       │   ├── useTheme.js          ← Theme management
-│       │   └── useToast.js          ← Toast composable
-│       ├── pages/
+│       ├── Composables/
+│       │   ├── UseAuth.js           ← Auth state + session persistence
+│       │   ├── UseCart.js           ← Cart state
+│       │   ├── UseSEO.js            ← Title + meta + OG + JSON-LD
+│       │   ├── UseTheme.js          ← Theme management
+│       │   └── UseToast.js          ← Toast composable
+│       ├── Pages/
 │       │   ├── HomePage.vue         ← Hero + featured products
 │       │   ├── ProductsPage.vue     ← Product grid + search + filter
 │       │   ├── ProductPage.vue      ← Product detail + reviews carousel
@@ -86,39 +86,39 @@ Aroma Spices/
 │       │   ├── VerifyEmailPage.vue  ← Email verification landing
 │       │   ├── AboutPage.vue
 │       │   └── ContactPage.vue
-│       ├── router/
-│       │   └── index.js
+│       ├── Router/
+│       │   └── Index.js
 │       ├── App.vue
-│       ├── main.js
-│       └── style.css                ← CSS variables (Ocean & Sand design system)
+│       ├── Main.js
+│       └── Style.css                ← CSS variables (Ocean & Sand design system)
 │
-├── backend/
-│   ├── config/
-│   │   └── db.js                    ← MongoDB connection
-│   ├── controllers/
-│   │   ├── authController.js        ← signup/login/refresh/logout/me/update/verifyEmail
-│   │   ├── productController.js
-│   │   ├── reviewController.js
-│   │   └── orderController.js       ← create/verify/fetch *(Phase 3)*
-│   ├── middleware/
-│   │   ├── authMiddleware.js        ← protect / optionalAuth
-│   │   └── errorHandlerMiddleware.js
-│   ├── models/
+├── Backend/
+│   ├── Config/
+│   │   └── Db.js                    ← MongoDB connection
+│   ├── Controllers/
+│   │   ├── AuthController.js        ← signup/login/refresh/logout/me/update/verifyEmail
+│   │   ├── ProductController.js
+│   │   ├── ReviewController.js
+│   │   └── OrderController.js       ← create/verify/fetch *(Phase 3)*
+│   ├── Middleware/
+│   │   ├── AuthMiddleware.js        ← protect / optionalAuth
+│   │   └── ErrorHandlerMiddleware.js
+│   ├── Models/
 │   │   ├── User.js
 │   │   ├── Product.js
 │   │   ├── Review.js
 │   │   └── Order.js                 ← *(Phase 3)*
-│   ├── routes/
-│   │   ├── authRoutes.js
-│   │   ├── productRoutes.js
-│   │   ├── reviewRoutes.js
-│   │   └── orderRoutes.js           ← *(Phase 3)*
-│   ├── scripts/
-│   │   └── seedProducts.js          ← Seeds 31 products to MongoDB
-│   ├── utils/
+│   ├── Routes/
+│   │   ├── AuthRoutes.js
+│   │   ├── ProductRoutes.js
+│   │   ├── ReviewRoutes.js
+│   │   └── OrderRoutes.js           ← *(Phase 3)*
+│   ├── Scripts/
+│   │   └── SeedProducts.js          ← Seeds 31 products to MongoDB
+│   ├── Utils/
 │   │   ├── razorpay.js              ← Razorpay client init *(Phase 3)*
-│   │   └── sendVerificationEmail.js ← Resend email util
-│   └── server.js
+│   │   └── SendVerificationEmail.js ← Resend email util
+│   └── Server.js
 │
 ├── .gitignore
 ├── LICENSE
@@ -146,7 +146,7 @@ cd Aroma-Spices
 ### 2. Backend
 
 ```bash
-cd backend
+cd Backend
 npm install
 # create .env (see Environment Variables below)
 npm start
@@ -157,13 +157,13 @@ Runs on: `http://localhost:5000`
 ### 3. Seed Database
 
 ```bash
-npm run seed    # → node scripts/seedProducts.js
+npm run seed    # → node scripts/SeedProducts.js
 ```
 
 ### 4. Frontend
 
 ```bash
-cd frontend
+cd Frontend
 npm install
 npm run dev
 ```
@@ -267,7 +267,7 @@ GET    /api/orders/:id
 
 ## 🔒 Environment Variables
 
-### `backend/.env`
+### `Backend/.env`
 
 ```
 PORT=5000
@@ -280,7 +280,7 @@ RAZORPAY_KEY_ID=rzp_test_...
 RAZORPAY_KEY_SECRET=...
 ```
 
-### `frontend/.env`
+### `Frontend/.env`
 
 ```
 VITE_API_URL=https://aroma-spices.onrender.com
@@ -326,7 +326,7 @@ npm run preview          # Preview production build
   --accent: #d8c3a5;
 ```
 
-Dark mode via `.dark` class on `<html>` — toggled by `useTheme.js` (light / system / dark), persisted in localStorage.
+Dark mode via `.dark` class on `<html>` — toggled by `UseTheme.js` (light / system / dark), persisted in localStorage.
 
 ---
 
