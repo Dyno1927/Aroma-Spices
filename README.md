@@ -352,7 +352,7 @@ This project's code is public so it can be read and learned from, but it is not 
 
 ## 👨‍💻 Author
 
-**Khanishk**
+**Dyno**
 
 I'm a full-stack developer (in progress), building a real production
 e-commerce platform for the family business.
