@@ -72,3 +72,10 @@ coverage/
 # ========================
 *.local
 Not Important/
+
+# Agent tooling (local only)
+.agents/
+AGENTS.md
+.claude/
+.codex/
+.opencode/
